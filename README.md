@@ -7,11 +7,13 @@ https://sendoru.github.io/cs-blog/
 </div>
 
 <div align=center>
+  <img src="https://github-readme-stats.vercel.app/api?username=sendoru&show_icons=true">
+</div>
+<div align=center>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sendoru&langs_count=10&layout=compact&theme=dark"> <br>
   <del>jupyter notebook images broke this lmao</del>
 </div>
 
-<br>
 
 <div align=center>
   <a href="https://solved.ac/profile/sendol">
