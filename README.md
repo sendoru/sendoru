@@ -7,7 +7,7 @@ https://sendoru.github.io/cs-blog/
 </div>
 
 <div align=center>
-  <img src="https://github-stats-extended.vercel.app/api?username=sendoru&show_icons=true">
+  <img src="https://github-stats-extended.vercel.app/api?username=sendoru&include_all_commits=true&theme=light_github">
 </div>
 <div align=center>
   <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sendoru&langs_count=10&layout=compact"> <br>
