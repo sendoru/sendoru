@@ -20,12 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Fetch trophy card
-        run: |
-          mkdir -p profile
-          curl --fail --location --retry 3 \
-            --output profile/trophy.svg \
-            "https://github-trophies.devomb.com/?username=sendoru&theme=onelight&row=2&column=5&cache_bust=$(date +%s)"
+      - name: Generate trophy card
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: username=${{ github.repository_owner }}&row=2&column=5
+          path: profile/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
