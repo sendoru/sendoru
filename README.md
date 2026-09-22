@@ -3,7 +3,7 @@
 https://sendoru.github.io/cs-blog/
 
 <div align=center>
-  <img src="https://github-trophies.devomb.com/?username=sendoru&theme=onelight&row=2&column=5"></img>
+  <img src="./profile/trophy.svg"></img>
 </div>
 
 <div align=center>
