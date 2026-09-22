@@ -20,12 +20,30 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate trophy card
-        uses: soulteary/github-profile-trophy-action@v1.0.0
+      - name: Check out original trophy generator
+        uses: actions/checkout@v6
         with:
-          options: username=${{ github.repository_owner }}&row=2&column=5
-          path: profile/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ryo-ma/github-profile-trophy
+          ref: e3c89df995e92e67cdd4b2acaab9d974583dc1f7
+          path: .trophy-generator
+          persist-credentials: false
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v1.x
+
+      - name: Generate trophy card
+        env:
+          GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sed -i 's/const maxRow = 10;/const maxRow = 2;/' .trophy-generator/render_svg.ts
+          sed -i 's/const maxColumn = -1; \/\/ auto/const maxColumn = 5;/' .trophy-generator/render_svg.ts
+          deno run --allow-net --allow-env --allow-read --allow-write \
+            .trophy-generator/render_svg.ts \
+            "${{ github.repository_owner }}" \
+            "profile/trophy.svg" \
+            "default"
 
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
