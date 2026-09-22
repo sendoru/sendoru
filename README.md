@@ -7,10 +7,10 @@ https://sendoru.github.io/cs-blog/
 </div>
 
 <div align=center>
-  <img src="https://github-stats-extended.vercel.app/api?username=sendoru&include_all_commits=true&theme=light_github">
+  <img src="./profile/stats.svg">
 </div>
 <div align=center>
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sendoru&langs_count=10&layout=compact"> <br>
+  <img src="./profile/top-langs.svg"> <br>
   <del>jupyter notebook images broke this lmao</del>
 </div>
 
