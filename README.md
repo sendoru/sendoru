@@ -3,14 +3,14 @@
 https://sendoru.github.io/cs-blog/
 
 <div align=center>
-  <img src="./profile/trophy.svg?v=35871865574-1"></img>
+  <img src="./profile/trophy.svg?v=35905683607-1"></img>
 </div>
 
 <div align=center>
-  <img src="./profile/stats.svg?v=35871865574-1">
+  <img src="./profile/stats.svg?v=35905683607-1">
 </div>
 <div align=center>
-  <img src="./profile/top-langs.svg?v=35871865574-1"> <br>
+  <img src="./profile/top-langs.svg?v=35905683607-1"> <br>
   <del>jupyter notebook images broke this lmao</del>
 </div>
 
